@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Rosario:wght@700&display=swap');
+@import 'vars';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.center {
+    padding-left: calc(50% - 620px);
+    padding-right: calc(50% - 620px);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'DM Sans';
+    font-style: normal;
+    
+}
+
+.header {
+    padding-top: 50px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navL {
+        display: flex;
+        
+
+        &-list {
+            display: flex;
+            gap: 40px;
+        }
+
+        &-item {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    &__navR {
+        display: flex;
+        
+        &-list {
+            display: flex;
+            gap: 40px;
+        }
+
+        &-item {
+            background-color: $colorMint;
+            border-radius: 64px;
+
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $colorTextDarkGreen;
+            
+            outline: none;
+            border-style: none;
+            border-radius: 8px;
+            width: 160px;
+            height: 40px;
+
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            color: $colorTextWhite;
+        }
+    }
+
+}
+
+.description {
+    background-color: $colorMint;
+    position: relative;
+
+    &__main {
+        margin-top: 43px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            font-family: 'Rosario';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 90px;
+            color: $colorTextBlack;
+
+            padding-top: 93px;
+            z-index: 1;
+        }
+
+        &-text {
+            text-align: center;
+            width: 637px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: $colorTextGrey;
+
+            padding-top: 20px;
+            z-index: 1;
+        }
+
+        &-move {
+            display: flex;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            color: $colorTextBlack;
+
+            padding-top: 40px;
+            gap: 20px;
+        }
+
+        &-link {
+            color: $colorTextBlack;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-photo {
+            position: absolute;
+            left: -6px;
+            top: -37px;
+            z-index: 0;
+        }
+
+    }
+
+    &__prev {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-img {
+           width: 862px;
+       }
+
+       &-cases {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+       }
+   }
+}
+
+.cases-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $colorTextWhite;
+
+    width: 250px;
+    height: 116px;
+
+    &-title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    &-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    &-img {
+        
+    }
+
+}
+
+.cases-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33px;
+
+    background-color: $colorMint;
+    border-radius: 64px;
+
+    width: 56px;
+    height: 56px;
+}
+
+.cases-box {
+    margin-left: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    
+    background-color: $colorTextDarkGreen;
+    border-radius: 64px;
+    width: 64px;
+    height: 64px;
+}
+
